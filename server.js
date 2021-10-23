@@ -33,7 +33,8 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     const newNote = req.body;
-    res.json(req.body)
+    notes.push(newNote);
+    res.json(req.body);
 })
 
 
