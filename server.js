@@ -4,7 +4,6 @@ const path = require('path');
 const fs = require('fs');
 
 const { db } = require('./Develop/db/db.json');
-const { application } = require('express');
 
 const app = express();
 const PORT = 3001;
