@@ -6,7 +6,7 @@ const fs = require('fs');
 const { db } = require('./db/db.json');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -33,8 +33,7 @@ app.get('/api/notes', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
-    let newNote = req.body;
-    notes.push(newNote);
+    console.log(req.body);
     res.json(req.body);
 })
 
