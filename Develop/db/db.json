@@ -1,6 +1,12 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
-]
+{
+    "notes": [
+        {
+            "title":"Walk Dogs",
+            "text":"Walk dogs 30 minutes every day"
+        },
+        {
+            "title":"Get Groceries",
+            "text":"Get groceries for the week on Sunday's"
+        }
+    ]
+}
